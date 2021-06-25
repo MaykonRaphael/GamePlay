@@ -11,6 +11,9 @@ import { Background } from './src/components/Background';
 
 LogBox.ignoreLogs(['You are not currently signed in to Expo on your development machine.']);
 
+// AsyncStorage.removeItem(COLLECTION_USERS)
+// AsyncStorage.removeItem(COLLECTION_APPOINTMENTS)
+
 export default function App() {
     const [fontsLoaded] = useFonts({
         Inter_400Regular,

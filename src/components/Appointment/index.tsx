@@ -1,9 +1,6 @@
 import React from "react";
 import { RectButton, RectButtonProps } from 'react-native-gesture-handler';
-import {
-    Text,
-    View,
-} from 'react-native';
+import { Text, View, } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 
 import { GuildIcon } from '../GuildIcon';
@@ -40,7 +37,7 @@ export function Appointment({ data, ...rest } : Props) {
                     style={styles.guildIconContainer}
                     colors={[ secondary50, secondary70 ]}
                 >
-                    <GuildIcon/>
+                    <GuildIcon guildId={data.guild.id} iconId={data.guild.icon} />
                 </LinearGradient>
 
                 <View style={styles.content}>
