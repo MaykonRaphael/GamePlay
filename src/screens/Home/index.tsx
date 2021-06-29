@@ -22,7 +22,6 @@ export function Home() {
 
     const navigation = useNavigation();
 
-
     function handleCategorySelect(categoryId: string) {
         categoryId === category ? setCategory('') : setCategory(categoryId);
     }
